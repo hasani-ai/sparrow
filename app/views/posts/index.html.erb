@@ -1,0 +1,20 @@
+<h1>Posts</h1>
+<% if posts_present? %>
+  <div id="posts">
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.author %></td>
+        <td><%= post.body %></td>
+        <td>
+          <%= button_to post_path(post), method: :delete, class: "btn btn-danger" do %>
+          <i class="bi bi-trash"></i>
+          Delete
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </div>
+<% else %>
+  <p>No posts to display</p>
+<% end %>
+  <%= link_to "New post", new_post_path %>

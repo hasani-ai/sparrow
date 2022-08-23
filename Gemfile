@@ -11,7 +11,7 @@ gem 'bootsnap', require: false
 gem 'bootstrap', '~> 5.2.0'
 gem "bcrypt", "~> 3.1.7"
 gem 'dartsass-rails'
-# gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.2"
 gem 'importmap-rails'
 gem 'money-rails', '~>1.12'
 gem 'pg', '~> 1.1'
@@ -20,6 +20,7 @@ gem 'redis', '~> 4.0'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
+gem 'sqlite3'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 

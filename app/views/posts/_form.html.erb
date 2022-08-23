@@ -1,0 +1,11 @@
+<%= form_with(model: post) do |form| %>
+  <div class="form-input">
+    <%= form.label :author %>
+    <%= form.text_field :author %>
+  </div>
+  <div class="form-input">
+    <%= form.label :body %>
+    <%= form.rich_text_area :body %>
+  </div>
+  <%= form.submit %>
+<% end %>
